@@ -1,7 +1,7 @@
 def cipherText2PlainText(cipherText: str) -> str:
-    plainText = ""
-    cnt = 0
-    isCipherText = False
+    plainText: str = ""
+    cnt: int = 0
+    isCipherText: bool = False
     for i in range(0, len(cipherText)):
         if cipherText[i] == "#":
             isCipherText = True
