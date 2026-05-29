@@ -1,18 +1,12 @@
 import math
 # in ra bảng cửu chương
 def bangCuuChuong(a, b):
-    if a < b:
-        print("Ban cuu chuong tu a -> b:")
-        for i in range(a, b + 1):
-            print(f"Bang cuu chuong {i}")
-            for j in range(1, 11):
-                print(f"{i} * {j} = {i * j}")
-    elif a > b:
-        print("Ban cuu chuong tu b -> a:")
-        for i in range(b, a + 1):
-            print(f"Bang cuu chuong {i}")
-            for j in range(1, 11):
-                print(f"{i} * {j} = {i * j}")
+    start, end = min(a, b), max(a, b)
+    print(f"Bang cuu chuong tu {start} -> {end}:")
+    for i in range(start, end + 1):
+        print(f"Bang cuu chuong {i}")
+        for j in range(1, 11):
+            print(f"{i} * {j} = {i * j}")
 
 # kiểm tra số nguyên tố
 def laSNT(n):
